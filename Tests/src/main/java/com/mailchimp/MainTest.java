@@ -1,6 +1,5 @@
 package com.mailchimp;
 
-import static org.junit.Assert.*;
 
 import java.io.IOException;
 
@@ -16,24 +15,23 @@ public class MainTest {
 
 	@Before
 	public void setupBrowser() {
-		System.setProperty("webdriver.chrome.driver", "./tools/macdrivers/chromedriver");
-		System.out.println(System.getProperty("webdriver.chrome.driver"));
+		System.setProperty("webdriver.chrome.driver", "../tools/macdrivers/chromedriver"); // configure your system to assume chrome webdriver
 	}
 
-	@Test
+	@Test // Try to navigate to MailChimp homepage
 	public void CanGotoHomePage() {
 		Pages.homepage().goTo();
 		Assert.assertTrue(Pages.homepage().isAt());
 	}
 	
-	@Test
+	@Test // Try to navigate to About Page from Home Page
 	public void CanGotoAboutPage() {
 		Pages.homepage().goTo();
 		Pages.aboutpage().goTo();
 		Assert.assertTrue(Pages.aboutpage().isAt());
 	}
 	
-	@Test
+	@Test // Try to search for all the leaders listed on the About Page
 	public void CanGetLeaders() throws IOException {
 		Pages.homepage().goTo();
 		Pages.aboutpage().goTo();
@@ -42,7 +40,7 @@ public class MainTest {
 	
 	@AfterClass
 	public static void close() {
-		Browser.close();
+		Browser.close(); // Close the browser when all tests are complete
 	}
 
 }
