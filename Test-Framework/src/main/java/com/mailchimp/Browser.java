@@ -22,7 +22,6 @@ public class Browser {
 	
 	
 	public static void goTo(String url) {
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);  // wait for up to 5 seconds for page to load before throwing error
 		driver.get(url); // get URL from param
 	}
 
@@ -31,7 +30,7 @@ public class Browser {
 	}
 	
 	public static void clickAbout() {
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("About MailChimp")));  // wait for up to 10 seconds to find and click the about link before throwing error
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);  // wait for up to 10 seconds to find and click the about link before throwing error
 		driver.findElement(By.linkText("About MailChimp")).click();
 	}
 	
@@ -46,7 +45,7 @@ public class Browser {
 		File leaderFile = new File("./leaders.csv");  // create empty leaders csv file
 		FileWriter fr = new FileWriter(leaderFile, true);  // configure the way the csv file will be written
 		
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);  //// wait for up to 5 seconds to find all leaders before throwing error
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);  //// wait for up to 10 seconds to find all leaders before throwing error
 		
 		List<WebElement> leaderList = driver.findElements(By.cssSelector("[data-description]"));  //  find all the elements that have data-description attribute
 		
