@@ -1,87 +1,40 @@
 # Selenium Test
 
-One Paragraph of project description goes here
+This project tests the following use case:
 
-## Getting Started
+1. Start scenario on https://mailchimp.com/
+2. Navigate to MailChimps about page
+3. Save each leadership team members name, position, and description
+into a .csv file.
+4. End scenario
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+### Getting Started
 
-### Prerequisites
+1. Clone the master branch from https://github.com/sayrilamar/mctest.git into your working directory
+2. Open the mctest folder as a project using a java IDE (Eclipse or STS)
 
-What things you need to install the software and how to install them
+### Unit Tests
 
-```
-Give examples
-```
+MainTest.java -
 
-### Installing
+![alt text](https://www.dropbox.com/s/sl0757a04oetwz0/Screenshot%202018-04-23%2023.36.29.png?dl=0 "Example: Run Test")
 
-A step by step series of examples that tell you have to get a development env running
+### Test Framework
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
+Pages.java - 
+HomePage.java - 
+AboutPage.java -
+Browser.java - 
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+Right click on the MainTest class in the TESTS directory, and run it as a JUnit Test.
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
+Results should show three passing test cases:
+![alt text](https://www.dropbox.com/s/9k2q9jhws0758bg/Screenshot%202018-04-23%2023.32.54.png?dl=0 "Example: Run Test")
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* [Java/JUnit] - Dev Framework I used
+* [Maven] - Dependency Management
+* [Selenium] - Used to test the scenario
