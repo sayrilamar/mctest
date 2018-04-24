@@ -11,11 +11,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Browser {
 	
 	static WebDriver driver = new ChromeDriver();  // Setup webdriver to use Chrome Driver
 	static List<String> leaders = new ArrayList<>();  // create a collection for leaders  found on about page
+	static WebDriverWait wait = new WebDriverWait(driver, 10); // Setup Explicit Wait time for searching for About link
 	
 	
 	public static void goTo(String url) {
@@ -28,7 +31,7 @@ public class Browser {
 	}
 	
 	public static void clickAbout() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);  // wait for up to 10 seconds to find and click the about link before throwing error
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.linkText("About MailChimp")));  // wait for up to 10 seconds to find and click the about link before throwing error
 		driver.findElement(By.linkText("About MailChimp")).click();
 	}
 	
@@ -43,7 +46,7 @@ public class Browser {
 		File leaderFile = new File("./leaders.csv");  // create empty leaders csv file
 		FileWriter fr = new FileWriter(leaderFile, true);  // configure the way the csv file will be written
 		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);  //// wait for up to 10 seconds to find all leaders before throwing error
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);  //// wait for up to 10 seconds to find all leaders before throwing error
 		
 		List<WebElement> leaderList = driver.findElements(By.cssSelector("[data-description]"));  //  find all the elements that have data-description attribute
 		
