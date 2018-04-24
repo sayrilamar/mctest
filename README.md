@@ -17,8 +17,6 @@ into a .csv file.
 
 MainTest.java - used to create pure and readable JUnit tests that call the Test Framework code; is not dependent on Selenium.
 
-![alt text](https://github.com/sayrilamar/mctest/blob/master/images/Screenshot%202018-04-23%2023.36.29.png?raw=true "Example: Run Test")
-
 ### Test Framework
 
 Pages.java - a class the contains the methods for each page
@@ -28,7 +26,8 @@ Browser.java - a class that has the meat and potatoes for communicating with the
 
 ## Running the tests
 
-Right click on the MainTest class in the TESTS directory, and run it as a JUnit Test.
+Right click on the MainTest class in the TESTS directory, and run it as a JUnit Test:
+![alt text](https://github.com/sayrilamar/mctest/blob/master/images/Screenshot%202018-04-23%2023.36.29.png?raw=true "Example: Run Test")
 
 Results should show three passing test cases:
 ![alt text](https://github.com/sayrilamar/mctest/blob/master/images/Screenshot%202018-04-23%2023.32.54.png?raw=true "Example: Run Test")
