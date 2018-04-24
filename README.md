@@ -15,14 +15,14 @@ into a .csv file.
 
 ### Unit Tests
 
-MainTest.java - used to create pure and readable JUnit tests that call the Test Framework code; is not dependent on Selenium.
+* MainTest.java - used to create pure and readable JUnit tests that call the Test Framework code; is not dependent on Selenium.
 
 ### Test Framework
 
-Pages.java - a class the contains the methods for each page
-HomePage.java - a class that contains the properties and methods for all interactions while on the Home Page
-AboutPage.java - a class that contains the properties and methods for all interactions while on the About Page
-Browser.java - a class that has the meat and potatoes for communicating with the browser via Selenium Web Driver
+* Pages.java - a class the contains the methods for each page
+* HomePage.java - a class that contains the properties and methods for all interactions while on the Home Page
+* AboutPage.java - a class that contains the properties and methods for all interactions while on the About Page
+* Browser.java - a class that has the meat and potatoes for communicating with the browser via Selenium Web Driver
 
 ## Running the tests
 
