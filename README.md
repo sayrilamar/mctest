@@ -31,7 +31,7 @@ Browser.java -
 Right click on the MainTest class in the TESTS directory, and run it as a JUnit Test.
 
 Results should show three passing test cases:
-![alt text](https://www.dropbox.com/s/9k2q9jhws0758bg/Screenshot%202018-04-23%2023.32.54.png?dl=0 "Example: Run Test")
+![alt text](https://photos-2.dropbox.com/t/2/AAD6gxJ7P7e00MIbqe8Ut_r1PLfee6aqYOb9C6EKQrBYKQ/12/40044003/png/32x32/1/_/1/2/Screenshot%202018-04-23%2023.32.54.png/EK2cxx4YkJvAASACKAIoBA/9ujibOPEPxzMXJQWcgrJF5c7yRklmR5dfEhrCAx7uKM?preserve_transparency=1&size=2048x1536&size_mode=3 "Example: Run Test")
 
 ## Built With
 
