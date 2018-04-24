@@ -22,7 +22,7 @@ public class Browser {
 	
 	
 	public static void goTo(String url) {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);  // wait for up to 10 seconds for page to load before throwing error
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);  // wait for up to 10 seconds for page to load before throwing error
 		driver.get(url); // get URL from param
 	}
 
