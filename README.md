@@ -30,7 +30,10 @@ Right click on the MainTest class in the TESTS directory, and run it as a JUnit 
 ![alt text](https://github.com/sayrilamar/mctest/blob/master/images/Screenshot%202018-04-23%2023.36.29.png?raw=true "Example: Run Test")
 
 Results should show three passing test cases:
-![alt text](https://github.com/sayrilamar/mctest/blob/master/images/Screenshot%202018-04-23%2023.32.54.png?raw=true "Example: Run Test")
+![alt text](https://github.com/sayrilamar/mctest/blob/master/images/Screenshot%202018-04-23%2023.32.54.png?raw=true "Example: Success")
+
+After test completes, leaders.csv file will be located in the TESTS directory:
+![alt text](https://github.com/sayrilamar/mctest/blob/master/images/Screenshot%202018-04-24%2000.39.05.png?raw=true "Example: leaders.csv")
 
 ## Built With
 
