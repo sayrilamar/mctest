@@ -1,6 +1,6 @@
 # Selenium Test
 
-This project tests the following use case:
+This project tests the following scenario on MAC OS using Chrome browser:
 
 1. Start scenario on https://mailchimp.com/
 2. Navigate to MailChimps about page
@@ -15,23 +15,23 @@ into a .csv file.
 
 ### Unit Tests
 
-MainTest.java -
+MainTest.java - used to create pure and readable JUnit tests that call the Test Framework code; is not dependent on Selenium.
 
-![alt text](https://www.dropbox.com/s/sl0757a04oetwz0/Screenshot%202018-04-23%2023.36.29.png?dl=0 "Example: Run Test")
+![alt text](https://github.com/sayrilamar/mctest/blob/master/images/Screenshot%202018-04-23%2023.36.29.png?raw=true "Example: Run Test")
 
 ### Test Framework
 
-Pages.java - 
-HomePage.java - 
-AboutPage.java -
-Browser.java - 
+Pages.java - a class the contains the methods for each page
+HomePage.java - a class that contains the properties and methods for all interactions while on the Home Page
+AboutPage.java - a class that contains the properties and methods for all interactions while on the About Page
+Browser.java - a class that has the meat and potatoes for communicating with the browser via Selenium Web Driver
 
 ## Running the tests
 
 Right click on the MainTest class in the TESTS directory, and run it as a JUnit Test.
 
 Results should show three passing test cases:
-![alt text](https://photos-2.dropbox.com/t/2/AAD6gxJ7P7e00MIbqe8Ut_r1PLfee6aqYOb9C6EKQrBYKQ/12/40044003/png/32x32/1/_/1/2/Screenshot%202018-04-23%2023.32.54.png/EK2cxx4YkJvAASACKAIoBA/9ujibOPEPxzMXJQWcgrJF5c7yRklmR5dfEhrCAx7uKM?preserve_transparency=1&size=2048x1536&size_mode=3 "Example: Run Test")
+![alt text](https://github.com/sayrilamar/mctest/blob/master/images/Screenshot%202018-04-23%2023.32.54.png?raw=true "Example: Run Test")
 
 ## Built With
 
